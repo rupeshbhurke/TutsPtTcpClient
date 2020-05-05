@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String message = etMessage.getText().toString().trim();
+                String message = etMessage.getText().toString().trim() +
+                        System.getProperty("line.separator");
                 if (!message.isEmpty()) {
                     new Thread(new SendMessageThread(message)).start();
                 }
