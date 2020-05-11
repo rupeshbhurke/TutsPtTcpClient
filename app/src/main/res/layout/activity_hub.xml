@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hub_background"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".HubActivity">
+
+    <RelativeLayout
+        android:id="@+id/row_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_01_height"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/relative_layout_margin">
+
+        <TextView
+            android:id="@+id/tvIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/IPPrompt"
+            android:textColor="@color/textViewBackground" />
+
+        <EditText
+            android:id="@+id/etIP"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="6dp"
+            android:layout_toEndOf="@id/tvIP"
+            android:layout_toRightOf="@id/tvIP"
+            android:background="@color/textViewBackground"
+            android:hint="@string/IPAddressHint"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/data_control_margin_left"
+            android:layout_marginLeft="@dimen/data_control_margin_left"
+            android:layout_toEndOf="@id/etIP"
+            android:layout_toRightOf="@id/etIP"
+            android:text="@string/PortPrompt"
+            android:textColor="@color/textViewBackground" />
+
+        <EditText
+            android:id="@+id/etPort"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="6dp"
+            android:layout_toEndOf="@id/tvPort"
+            android:layout_toRightOf="@id/tvPort"
+            android:background="@color/textViewBackground"
+            android:hint="@string/PortHint"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/data_control_margin_left"
+            android:layout_marginLeft="@dimen/data_control_margin_left"
+            android:layout_toEndOf="@id/etPort"
+            android:layout_toRightOf="@id/etPort"
+            android:text="@string/start_text" />
+
+        <Button
+            android:id="@+id/btStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/data_control_margin_left"
+            android:layout_marginLeft="@dimen/data_control_margin_left"
+            android:layout_toEndOf="@id/btStart"
+            android:layout_toRightOf="@id/btStart"
+            android:text="@string/stop_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row_02"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_02_height"
+        android:layout_below="@id/row_01"
+        android:layout_margin="@dimen/relative_layout_margin"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btScene_01"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/scene_button_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/scene_button_margin_top"
+            android:background="@drawable/button_scene"
+            android:text="@string/scene_1_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btScene_02"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/scene_button_height"
+            android:layout_marginStart="@dimen/scene_button_margin_left"
+            android:layout_marginLeft="@dimen/scene_button_margin_left"
+            android:layout_marginTop="@dimen/scene_button_margin_top"
+            android:layout_toEndOf="@id/btScene_01"
+            android:layout_toRightOf="@id/btScene_01"
+            android:background="@drawable/button_scene"
+            android:text="@string/scene_2_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btScene_03"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/scene_button_height"
+            android:layout_marginStart="@dimen/scene_button_margin_left"
+            android:layout_marginLeft="@dimen/scene_button_margin_left"
+            android:layout_marginTop="@dimen/scene_button_margin_top"
+            android:layout_toEndOf="@id/btScene_02"
+            android:layout_toRightOf="@id/btScene_02"
+            android:background="@drawable/button_scene"
+            android:text="@string/scene_3_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btScene_04"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/scene_button_height"
+            android:layout_marginStart="@dimen/scene_button_margin_left"
+            android:layout_marginLeft="@dimen/scene_button_margin_left"
+            android:layout_marginTop="@dimen/scene_button_margin_top"
+            android:layout_toEndOf="@id/btScene_03"
+            android:layout_toRightOf="@id/btScene_03"
+            android:background="@drawable/button_scene"
+            android:text="@string/scene_4_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btScene_05"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/scene_button_height"
+            android:layout_marginStart="@dimen/scene_button_margin_left"
+            android:layout_marginLeft="@dimen/scene_button_margin_left"
+            android:layout_marginTop="@dimen/scene_button_margin_top"
+            android:layout_toEndOf="@id/btScene_04"
+            android:layout_toRightOf="@id/btScene_04"
+            android:background="@drawable/button_scene"
+            android:text="@string/scene_5_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btScene_06"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/scene_button_height"
+            android:layout_marginStart="@dimen/scene_button_margin_left"
+            android:layout_marginLeft="@dimen/scene_button_margin_left"
+            android:layout_marginTop="@dimen/scene_button_margin_top"
+            android:layout_toEndOf="@id/btScene_05"
+            android:layout_toRightOf="@id/btScene_05"
+            android:background="@drawable/button_scene"
+            android:text="@string/scene_6_text"
+            android:textColor="@color/textViewColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row_03"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_03_height"
+        android:layout_below="@id/row_02"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btCut_01"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/cut_button_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/cut_button_margin_top"
+            android:background="@drawable/button_cut"
+            android:text="@string/cut_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btCut_02"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/cut_button_height"
+            android:layout_marginStart="@dimen/cut_button_margin_left"
+            android:layout_marginLeft="@dimen/cut_button_margin_left"
+            android:layout_marginTop="@dimen/cut_button_margin_top"
+            android:layout_toEndOf="@id/btCut_01"
+            android:layout_toRightOf="@id/btCut_01"
+            android:background="@drawable/button_cut"
+            android:text="@string/cut_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btCut_03"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/cut_button_height"
+            android:layout_marginStart="@dimen/cut_button_margin_left"
+            android:layout_marginLeft="@dimen/cut_button_margin_left"
+            android:layout_marginTop="@dimen/cut_button_margin_top"
+            android:layout_toEndOf="@id/btCut_02"
+            android:layout_toRightOf="@id/btCut_02"
+            android:background="@drawable/button_cut"
+            android:text="@string/cut_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btCut_04"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/cut_button_height"
+            android:layout_marginStart="@dimen/cut_button_margin_left"
+            android:layout_marginLeft="@dimen/cut_button_margin_left"
+            android:layout_marginTop="@dimen/cut_button_margin_top"
+            android:layout_toEndOf="@id/btCut_03"
+            android:layout_toRightOf="@id/btCut_03"
+            android:background="@drawable/button_cut"
+            android:text="@string/cut_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btCut_05"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/cut_button_height"
+            android:layout_marginStart="@dimen/cut_button_margin_left"
+            android:layout_marginLeft="@dimen/cut_button_margin_left"
+            android:layout_marginTop="@dimen/cut_button_margin_top"
+            android:layout_toEndOf="@id/btCut_04"
+            android:layout_toRightOf="@id/btCut_04"
+            android:background="@drawable/button_cut"
+            android:text="@string/cut_text"
+            android:textColor="@color/textViewColor" />
+
+        <Button
+            android:id="@+id/btCut_06"
+            android:layout_width="@dimen/scene_button_width"
+            android:layout_height="@dimen/cut_button_height"
+            android:layout_marginStart="@dimen/cut_button_margin_left"
+            android:layout_marginLeft="@dimen/cut_button_margin_left"
+            android:layout_marginTop="@dimen/cut_button_margin_top"
+            android:layout_toEndOf="@id/btCut_05"
+            android:layout_toRightOf="@id/btCut_05"
+            android:background="@drawable/button_cut"
+            android:text="@string/cut_text"
+            android:textColor="@color/textViewColor" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

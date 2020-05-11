@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">TutsPtTcpClient</string>
+    <string name="app_name">V-Controller</string>
+    <string name="IPPrompt">IP Address: </string>
+    <string name="PortPrompt">Port: </string>
+    <string name="IPAddressHint">IP Address</string>
+    <string name="PortHint">Port Number</string>
+    <string name="start_text">Start</string>
+    <string name="stop_text">Stop</string>
+    <string name="scene_1_text">Scene\n1</string>
+    <string name="scene_2_text">Scene\n2</string>
+    <string name="scene_3_text">Scene\n3</string>
+    <string name="scene_4_text">Scene\n4</string>
+    <string name="scene_5_text">Scene\n5</string>
+    <string name="scene_6_text">Scene\n6</string>
+    <string name="cut_text">Cut</string>
 </resources>

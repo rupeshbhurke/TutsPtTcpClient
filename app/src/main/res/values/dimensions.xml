@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row_01_height">50dp</dimen>
+    <dimen name="row_02_height">100dp</dimen>
+    <dimen name="row_03_height">50dp</dimen>
+    <dimen name="row_04_height">80dp</dimen>
+
+    <dimen name="relative_layout_margin">6dp</dimen>
+    <dimen name="data_control_margin_left">10dp</dimen>
+    <dimen name="scene_button_width">80dp</dimen>
+    <dimen name="scene_button_height">80dp</dimen>
+    <dimen name="scene_button_height_half">40dp</dimen>
+    <dimen name="scene_button_margin_left">16dp</dimen>
+    <dimen name="scene_button_margin_top">6dp</dimen>
+    <dimen name="scene_button_left_border">5dp</dimen>
+    <dimen name="scene_button_top_border">5dp</dimen>
+    <dimen name="scene_button_right_border">5dp</dimen>
+    <dimen name="scene_button_bottom_border">5dp</dimen>
+    <dimen name="scene_button_height_inner">70dp</dimen>
+
+    <dimen name="cut_button_width">80dp</dimen>
+    <dimen name="cut_button_height">40dp</dimen>
+    <dimen name="cut_button_height_half">20dp</dimen>
+    <dimen name="cut_button_margin_top">6dp</dimen>
+    <dimen name="cut_button_margin_left">16dp</dimen>
+    <dimen name="cut_button_left_border">5dp</dimen>
+    <dimen name="cut_button_top_border">5dp</dimen>
+    <dimen name="cut_button_right_border">5dp</dimen>
+    <dimen name="cut_button_bottom_border">5dp</dimen>
+    <dimen name="cut_button_height_inner">30dp</dimen>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/button_scene_default_state_border"
+        android:height="@dimen/scene_button_height_half"
+        android:width="@dimen/scene_button_width"/>
+
+    <item android:drawable="@drawable/button_scene_default_state_border"
+        android:top="@dimen/scene_button_height_half"
+        android:height="@dimen/scene_button_height_half"
+        android:width="@dimen/scene_button_width"/>
+    <item
+        android:bottom="@dimen/scene_button_bottom_border"
+        android:drawable="@drawable/button_scene_default_state_inner"
+        android:left="@dimen/scene_button_left_border"
+        android:right="@dimen/scene_button_right_border"
+        android:top="@dimen/scene_button_top_border"
+        android:height="@dimen/scene_button_height_inner"/>
+</layer-list>
